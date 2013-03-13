@@ -39,3 +39,7 @@ inoremap <left> <nop>
 inoremap <right> <nop>
 
 map <c-n> :NERDTreeToggle<cr> " open NERDTree
+
+" disable fucking blinking =)
+autocmd GUIEnter * set vb t_vb= " for GUI
+autocmd VimEnter * set vb t_vb=
