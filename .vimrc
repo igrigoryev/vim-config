@@ -23,6 +23,7 @@ set vb			      " fucking beep off
 " GUI options
 set guioptions-=T	      " don't show toolbar
 set guioptions-=r	      " don't show right scrollbar
+set cursorline		      " highlighting the current line
 
 
 color slate		      " color scheme
