@@ -15,11 +15,26 @@ set nocompatible              " vim, not vi
 set autoindent smartindent    " auto/smart indent
 set expandtab                 " expand tabs to spaces
 set smarttab                  " tab and backspace are smart
-set tabstop=4                 " 6 spaces
-set shiftwidth=4
+set tabstop=2                 " 2 spaces
+set shiftwidth=2
 set cmdheight=2               " command line two lines high
+set nowrap		      " don't wwaping lines
+set vb			      " fucking beep off
+" GUI options
+set guioptions-=T	      " don't show toolbar
+set guioptions-=r	      " don't show right scrollbar
+
 
 color slate		      " color scheme
 
-autocmd vimenter * NERDTree   " open NerdTree automaticly
+" Turn off fucking arrows!
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+
 map <c-n> :NERDTreeToggle<cr> " open NERDTree
