@@ -24,6 +24,7 @@ set vb			      " fucking beep off
 set guioptions-=T	      " don't show toolbar
 set guioptions-=r	      " don't show right scrollbar
 set cursorline		      " highlighting the current line
+set nocp
 
 
 color slate		      " color scheme
@@ -37,6 +38,11 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
+
+" tabs
+
+nnoremap <c-tab> :tabnext<cr>
+nnoremap <c-s-tab> :tabprevious<cr>
 
 map <c-n> :NERDTreeToggle<cr> " open NERDTree
 
