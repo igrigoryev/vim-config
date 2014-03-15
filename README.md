@@ -1,2 +1,1 @@
-vim-config
-==========
+vimrc for my mac
